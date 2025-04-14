@@ -3,12 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Keïta Design : création de logos, affiches, flyers, sites web et formations digitales. Vos visuels pros en un clic !">
   <title>Keïta Design</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-800">
 
-  <nav class="bg-gray-800 text-white p-4 fixed w-full z-50 top-0">
+  <nav class="bg-gray-800 text-white p-4 fixed w-full z-50 top-0 shadow-lg">
     <div class="flex justify-between items-center max-w-6xl mx-auto">
       <h1 class="text-lg font-bold">Keïta Design</h1>
       <ul class="flex space-x-4 text-sm">
@@ -25,23 +37,22 @@
   <section id="accueil" class="pt-24 pb-16 text-center bg-blue-600 text-white">
     <h2 class="text-4xl font-bold">Bienvenue chez Keïta Design</h2>
     <p class="mt-4 text-lg">Design graphique, logos, flyers, et formations numériques professionnelles</p>
+    <a href="#boutique" class="mt-6 inline-block bg-yellow-400 text-gray-900 py-3 px-6 rounded font-semibold shadow hover:bg-yellow-500 transition">Découvrir nos produits</a>
   </section>
 
   <section id="services" class="py-12 px-6 text-center">
     <h2 class="text-3xl font-bold mb-6">Nos Services</h2>
     <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <div><h3 class="text-xl font-semibold">Création de logos</h3><p class="mt-2">Logos uniques pour booster votre image.</p></div>
-      <div><h3 class="text-xl font-semibold">Design graphique</h3><p class="mt-2">Affiches, cartes, flyers personnalisés.</p></div>
-      <div><h3 class="text-xl font-semibold">Développement web</h3><p class="mt-2">Sites modernes adaptés à vos besoins.</p></div>
+      <div class="card border rounded shadow p-4"><h3 class="text-xl font-semibold">Création de logos</h3><p class="mt-2">Logos uniques pour booster votre image.</p></div>
+      <div class="card border rounded shadow p-4"><h3 class="text-xl font-semibold">Design graphique</h3><p class="mt-2">Affiches, cartes, flyers personnalisés.</p></div>
+      <div class="card border rounded shadow p-4"><h3 class="text-xl font-semibold">Développement web</h3><p class="mt-2">Sites modernes adaptés à vos besoins.</p></div>
     </div>
   </section>
 
   <section id="about" class="bg-gray-100 py-12 px-6 text-center">
     <h2 class="text-3xl font-bold mb-6">À propos</h2>
     <p class="max-w-3xl mx-auto text-lg">Je suis Abdrahmane Keïta, passionné de design, branding et technologie. Mon objectif est d’accompagner entreprises et projets dans la création de visuels percutants et professionnels.</p>
-  </section>
-
-  <section id="gallery" class="py-12 px-6 text-center">
+  </section><section id="gallery" class="py-12 px-6 text-center">
     <h2 class="text-3xl font-bold mb-6">Galerie</h2>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
       <img src="https://cdn.pixabay.com/photo/2017/03/01/19/41/ux-2112271_960_720.jpg" class="rounded shadow" />
@@ -51,113 +62,74 @@
   </section>
 
   <section id="boutique" class="py-12 px-6 text-center bg-white">
-  <h2 class="text-3xl font-bold mb-6">Notre Boutique</h2>
-  <p class="mb-4 text-lg text-gray-700">Commandez nos services et produits professionnels.</p>
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Notre Boutique</h2>
+    <p class="mb-4 text-lg text-gray-700">Commandez nos services et produits professionnels.</p>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
-    <!-- 1 -->
-    <div class="border rounded shadow p-4">
-      <img src="https://cdn.pixabay.com/photo/2017/01/18/15/45/logo-1996744_960_720.png" class="rounded mb-2 w-full h-48 object-cover">
-      <h3 class="text-xl font-semibold">Logo personnalisé</h3>
-      <p>Logo unique pour refléter votre marque.</p>
-      <p class="font-bold text-blue-600">10 000 FCFA</p>
-      <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
+      <div class="border rounded shadow p-4">
+        <img src="https://cdn.pixabay.com/photo/2017/01/18/15/45/logo-1996744_960_720.png" class="rounded mb-2 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold">Logo personnalisé</h3>
+        <p>Logo unique pour refléter votre marque.</p>
+        <p class="font-bold text-blue-600">10 000 FCFA</p>
+        <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
+      </div>
+
+      <div class="border rounded shadow p-4">
+        <img src="https://cdn.pixabay.com/photo/2016/10/24/17/36/business-cards-1764000_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold">Carte de visite</h3>
+        <p>Design recto-verso professionnel</p>
+        <p class="font-bold text-blue-600">7 000 FCFA</p>
+        <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
+      </div>
+
+      <div class="border rounded shadow p-4">
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/flyer-2022652_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold">Flyer promotionnel</h3>
+        <p>Flyer moderne pour événements ou pub</p>
+        <p class="font-bold text-blue-600">8 000 FCFA</p>
+        <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
+      </div>
+
+      <div class="border rounded shadow p-4">
+        <img src="https://cdn.pixabay.com/photo/2015/05/15/14/47/poster-768734_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold">Affiche événementielle</h3>
+        <p>Impact visuel garanti pour vos annonces</p>
+        <p class="font-bold text-blue-600">12 000 FCFA</p>
+        <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
+      </div>
+
+      <div class="border rounded shadow p-4">
+        <img src="https://cdn.pixabay.com/photo/2020/04/10/18/43/social-media-5023798_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold">Kit réseaux sociaux</h3>
+        <p>Visuels pour booster vos réseaux</p>
+        <p class="font-bold text-blue-600">15 000 FCFA</p>
+        <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
+      </div>
+
+      <div class="border rounded shadow p-4">
+        <img src="https://cdn.pixabay.com/photo/2015/02/01/22/10/website-620684_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold">Mini site vitrine</h3>
+        <p>Site web simple et pro pour votre activité</p>
+        <p class="font-bold text-blue-600">25 000 FCFA</p>
+        <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
+      </div>
+
     </div>
-
-    <!-- 2 -->
-    <div class="border rounded shadow p-4">
-      <img src="https://cdn.pixabay.com/photo/2016/10/24/17/36/business-cards-1764000_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
-      <h3 class="text-xl font-semibold">Carte de visite</h3>
-      <p>Design recto-verso professionnel</p>
-      <p class="font-bold text-blue-600">7 000 FCFA</p>
-      <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
-    </div>
-
-    <!-- 3 -->
-    <div class="border rounded shadow p-4">
-      <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/flyer-2022652_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
-      <h3 class="text-xl font-semibold">Flyer promotionnel</h3>
-      <p>Flyer moderne pour événements ou pub</p>
-      <p class="font-bold text-blue-600">8 000 FCFA</p>
-      <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
-    </div>
-
-    <!-- 4 -->
-    <div class="border rounded shadow p-4">
-      <img src="https://cdn.pixabay.com/photo/2015/05/15/14/47/poster-768734_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
-      <h3 class="text-xl font-semibold">Affiche événementielle</h3>
-      <p>Impact visuel garanti pour vos annonces</p>
-      <p class="font-bold text-blue-600">12 000 FCFA</p>
-      <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
-    </div>
-
-    <!-- 5 -->
-    <div class="border rounded shadow p-4">
-      <img src="https://cdn.pixabay.com/photo/2020/04/10/18/43/social-media-5023798_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
-      <h3 class="text-xl font-semibold">Kit réseaux sociaux</h3>
-      <p>Visuels pour booster vos réseaux</p>
-      <p class="font-bold text-blue-600">15 000 FCFA</p>
-      <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
-    </div>
-
-    <!-- 6 -->
-    <div class="border rounded shadow p-4">
-      <img src="https://cdn.pixabay.com/photo/2015/02/01/22/10/website-620684_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
-      <h3 class="text-xl font-semibold">Mini site vitrine</h3>
-      <p>Site web simple et pro pour votre activité</p>
-      <p class="font-bold text-blue-600">25 000 FCFA</p>
-      <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
-    </div>
-
-    <!-- 7 -->
-    <div class="border rounded shadow p-4">
-      <img src="https://cdn.pixabay.com/photo/2015/09/18/20/20/facebook-944504_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
-      <h3 class="text-xl font-semibold">Gestion de page Facebook</h3>
-      <p>Publication automatique + contenu créatif</p>
-      <p class="font-bold text-blue-600">20 000 FCFA</p>
-      <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
-    </div>
-
-    <!-- 8 -->
-    <div class="border rounded shadow p-4">
-      <img src="https://cdn.pixabay.com/photo/2023/08/23/08/50/ai-generated-8208380_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
-      <h3 class="text-xl font-semibold">Maîtrisez ChatGPT</h3>
-      <p>Formation ou Ebook pour utiliser l’IA efficacement</p>
-      <p class="font-bold text-blue-600">18 000 FCFA</p>
-      <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
-    </div>
-
-    <!-- 9 -->
-    <div class="border rounded shadow p-4">
-      <img src="https://cdn.pixabay.com/photo/2016/10/04/13/55/facebook-1714021_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
-      <h3 class="text-xl font-semibold">Page Facebook Pro</h3>
-      <p>Optimisation + image professionnelle de votre business</p>
-      <p class="font-bold text-blue-600">15 000 FCFA</p>
-      <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
-    </div>
-
-    <!-- 10 -->
-    <div class="border rounded shadow p-4">
-      <img src="https://cdn.pixabay.com/photo/2018/04/23/20/09/facebook-3340489_960_720.jpg" class="rounded mb-2 w-full h-48 object-cover">
-      <h3 class="text-xl font-semibold">Guide Facebook Ads</h3>
-      <p>Apprenez à faire des publicités rentables sur Facebook</p>
-      <p class="font-bold text-blue-600">10 000 FCFA</p>
-      <a href="https://wa.me/22370472851" class="bg-green-500 text-white py-2 px-4 rounded mt-3 inline-block">Commander</a>
-    </div>
-
-  </div>
-</section>
-
-  <section id="reseaux" class="py-12 px-6 text-center bg-gray-100">
+  </section><section id="reseaux" class="py-12 px-6 text-center bg-gray-100">
     <h2 class="text-3xl font-bold mb-6">Suivez-nous</h2>
     <p class="mb-4">Restez connecté avec Keïta Design :</p>
-    <a href="https://www.facebook.com/profile.php?id=61565913225167" target="_blank" class="text-blue-600 text-xl underline">Facebook</a>
+    <a href="https://www.facebook.com/profile.php?id=61565913225167" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-10 mx-auto">
+    </a>
   </section>
+
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 Keïta Design. Tous droits réservés.</p>
+  </footer>
 
   <a href="https://wa.me/22370472851" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg text-xl" target="_blank">
     WhatsApp
   </a>
 
 </body>
-        </html>
-        
+</html>
